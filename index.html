@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<style>
+body {
+    background:linear-gradient(rgb(59, 228, 254),rgb(243, 247, 249)); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial; 
+    height: 100vh;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color:black; 
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 3px;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+}
+.container {
+  background: white;
+  width: 650px;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px grey;
+  font-size: 18px;
+}  
+.row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1;
+}
+
+.btn-cnt {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 15px;
+  background: #3498db;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background: #1e76b0;
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 25px;
+  }
+  h2 {
+    font-size: 30px;
+    color: red; 
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Registration Form</h2>
+
+  <form>
+    <div class="row">
+      <div class="col">
+        <p><label>First Name</label>
+        <input type="text"  required>
+        <p><label>Email</label>
+        <input type="email" required>
+        <p><label>Date Of Birth</label>
+        <input type="date" required>
+        <p><label>Password</label>
+        <input type="password" required>
+      </div>
+
+      <div class="col">
+        <p><label>Last Name</label>
+        <input type="text" required>
+        <p><label>Phone Number</label>
+        <input type="text" required>
+        <p><label>Address</label>
+        <input type="text" required>
+        <p><label>Confirm Password</label>
+        <input type="password" required>
+      </div>
+    </div>
+
+    <div class="btn-cnt">
+      <button type="submit">Register</button>
+    </div>
+
+  </form>
+</div>
+</body>
+</html>
